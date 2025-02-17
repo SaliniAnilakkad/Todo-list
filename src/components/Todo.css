@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ededfe;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 25px;
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Headings */
+h1 {
+    font-size: 26px;
+    color: #030d16;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #0e233e;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f3f4f5;
+    padding-bottom: 4px;
+}
+
+/* Input Field */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+input {
+    width: 78%;
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid #02080e;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2e2a2a;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s ease;
+    background-color: #8d8dce; /* Example blue color */
+    color: white; /* Ensure text is visible */
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* Align Add/Update Button Below Input */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+/* Task List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffffd8;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px 0;
+    position: relative;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* Improved Alignment */
+h4 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+
+}
+
+/* Completed Task Styling */
+.completed h4 {
+    color: #2e2a2a;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
